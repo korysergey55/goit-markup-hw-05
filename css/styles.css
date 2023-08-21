@@ -105,9 +105,7 @@ body {
 }
 .header .nav .logo-header{
   margin-right: 76px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-
+ 
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -179,10 +177,6 @@ body {
   flex-wrap: wrap;
   gap:40px;
 }
-.address .list .item{
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
 .address .link{
   line-height: 1.5; 
   letter-spacing: 0.32px;
@@ -198,9 +192,11 @@ body {
  
 /* ====================== HERO ==========================================*/
 .hero{
-  max-width: 1440px;
+  /* max-width: 1440px; */
   padding-top: 188px;
   padding-bottom: 188px;
+  margin: 0 auto;
+
   background-color: var(--hero-color);
   background-image:linear-gradient(rgba(46, 47, 66, 0.7), 
 rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
@@ -605,7 +601,6 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
   height: 100%;
   padding: 40px 32px;
 
-  text-align: center;
   color: var(--bg-color-secindary);
   background-color: var(--akcent-color);
 
@@ -661,8 +656,11 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
   top:50%;
   left:50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  width: 100%;
+  max-width: 408px;
   min-height: 584px;
+
+  padding: 72px  24px 24px 24px;
 
   border-radius: 4px;
   background-color:  #FCFCFC;
@@ -702,3 +700,152 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
  .close-button:hover .icon,.close-button:focus .icon{
   fill: #ffffff;
  }  
+
+.modal-title{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  text-align: center;
+
+  margin-bottom: 16px;
+  color: #2E2F42;
+}
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 4px;
+}
+.modal-form-icon-thumb{
+  position: relative;
+}
+.label{
+  color:  #8E8F99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16; 
+  letter-spacing: 0.48px;
+
+  margin-bottom: 4px;
+}
+.input{
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: 40px;
+
+  margin: 0 auto;
+  padding-left: 35px;
+
+  border-radius: 4px;
+  border: 1px solid  rgba(46, 47, 66, 0.40);
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.input:focus {
+  border: 1px solid  #4D5AE5;
+}
+.input:focus + .modal-icon{
+  fill: #4D5AE5;
+}
+
+.modal-icon{
+  position: absolute;
+  left: 12px;
+  top: 29%; 
+  fill:var(--footer-color);
+  display: block;
+  width: 15px;
+  height: 15px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textarea{
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: 120px;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16; 
+  letter-spacing: 0.48px;
+
+  color: rgba(46, 47, 66, 0.40);
+  resize: none;
+  outline: transparent;
+  border:1px solid  rgba(46, 47, 66, 0.40);
+  border-radius: 4px;
+}
+
+.textarea:focus {
+  border: 1px solid  #4D5AE5;
+}
+.label-checkbox{
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.checkbox-link {
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 1.16;
+   letter-spacing: 0.03em;
+   color:var(--akcent-color);
+}
+
+.label-checkbox::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+  margin-right: 8px;
+
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.40);
+
+  background-image: url(../images/chexbox.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.checkbox:checked + .label-checkbox::before {
+  background-color:var(--akcent-color);
+}
+
+.btn-submit{
+  display: block;
+  width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 16px 32px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; 
+  letter-spacing: 0.64px;
+
+  border-radius: 4px;
+  outline: transparent;
+  border: transparent;
+  color: var(--bg-color);
+  background: var(--akcent-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.btn-submit:hover, .btn-submit:focus{
+   background-color:var(--hover-color);
+   border: transparent;
+}
