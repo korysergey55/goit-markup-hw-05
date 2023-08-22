@@ -845,9 +845,9 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
 .modal-icon{
   display: block;
   position: absolute;
+  transform: translateY(-50%);
   left: 16px;
   top: 50%; 
-  transform: translateY(-50%);
 
   display: block;
   width: 15px;
@@ -914,15 +914,23 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
 
    border: 1px solid rgba(46, 47, 66, 0.4); 
    border-radius: 2px;
+   
    color:var(--akcent-color);
+   fill: transparent;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:checked  .checkbox-icon-container{
+  fill:var(--footer-text);
+  background-color:var(--hover-color);
+  border: none;
 }
 .checkbox:checked + .checkbox-icon-container{
   fill:var(--footer-text);
   background-color:var(--hover-color);
   border: none;
 }
+
 
 .checkbox-link{
   color:var(--akcent-color);
