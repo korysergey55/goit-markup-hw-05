@@ -580,8 +580,7 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
   gap:16px;
 
   min-width: 165px;
-  height:40px;
-  margin-right: 0;
+  height: 40px;
   padding: 24px 8px;
 
   font-size: 16px;
@@ -798,8 +797,11 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
   justify-content: start;
   gap: 4px;
 }
-.form-container{
+.input-container{
   margin-bottom: 8px;
+}
+.textarea-container{
+  margin-bottom: 16px;
 }
 .modal-form-icon-thumb{
   position: relative;
@@ -841,6 +843,7 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
 }
 
 .modal-icon{
+  display: block;
   position: absolute;
   left: 16px;
   top: 50%; 
