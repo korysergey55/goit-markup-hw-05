@@ -934,7 +934,7 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
 .checkbox:checked + .label-checkbox > .checkbox-icon-container {
   background-color:  var(--hover-color);
   border: none;
-  fill: #FFFFFF;
+  fill: var(--bg-color-secindary);
   border-color:  var(--hover-color);
 }
 
