@@ -791,12 +791,7 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
 
   color: var(--hero-color);
 }
-.modal-form{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: start;
-  gap: 4px; */
-}
+
 .input-container{
   margin-bottom: 8px;
 }
@@ -843,19 +838,6 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
 }
 
 .modal-icon{
-  /* display: block;
-  position: absolute;
-  transform:translateY(-50%);
-  left: 16px;
-  top: 50%; 
-
-  display: block;
-  width: 15px;
-  height: 15px;
-
-  fill:var(--footer-color);
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   position: absolute;
   left: 16px;
   top: 50%;
@@ -923,14 +905,12 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
    color:var(--akcent-color);
    fill: transparent;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .checkbox:checked .checkbox-icon-container{
-  background-color: var(--hover-color);
-  border: none;
-  fill: #FFFFFF;
-  border-color: var(--hover-color);
-} */
+
 .checkbox:checked + .label-checkbox > .checkbox-icon-container {
   background-color:  var(--hover-color);
   border: none;
