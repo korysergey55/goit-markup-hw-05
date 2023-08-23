@@ -581,7 +581,7 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
 
   min-width: 165px;
   height: 40px;
-  padding: 24px 8px;
+  /* padding: 24px 8px; */
 
   font-size: 16px;
   font-weight: 500;
@@ -605,7 +605,7 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
 }
 
 .footer-btn-svg{
-  margin-left: 16px;
+  /* margin-left: 16px; */
   fill: var(--bg-color);
 }
 
@@ -792,10 +792,10 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
   color: var(--hero-color);
 }
 .modal-form{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 4px;
+  gap: 4px; */
 }
 .input-container{
   margin-bottom: 8px;
@@ -925,7 +925,7 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
   border: none;
   fill:var(--footer-text);
 }
-.checkbox:checked + .checkbox-icon-container{
+.checkbox:checked + .checkbox-icon-container>.checkbox-icon{
   background-color:var(--hover-color);
   border: none;
   fill:var(--footer-text);
