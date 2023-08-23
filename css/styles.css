@@ -918,19 +918,19 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
    color:var(--akcent-color);
    fill: transparent;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:checked .checkbox-icon-container{
-  background-color: #404BBF;
+  background-color: var(--hover-color);
   border: none;
   fill: #FFFFFF;
-  border-color: #404BBF;
+  border-color: var(--hover-color);
 }
-.checkbox:checked + .checkbox-icon-container>.checkbox-icon{
-  background-color: #404BBF;
+.checkbox:checked + .checkbox-icon-container> .checkbox-icon{
+  background-color:var(--hover-color);
   border: none;
   fill: #FFFFFF;
-  border-color: #404BBF;
+  border-color:var(--hover-color);
 }
 
 .checkbox-link{
